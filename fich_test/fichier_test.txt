@@ -1,0 +1,15 @@
+                    
+                                    *get:* 
+Cette commande permet de récupérer un fichier présent sur le serveur.
+Si la commande est suivie d'un nom de fichier, le fichier distant est transféré sur la machine locale dans le répertoire local en cours.
+Si la commande est suivie de deux noms de fichiers, le fichier distant (le premier nom) est transféré sur la machine locale dans le répertoire local en cours, avec le nom de fichier précisé (le deuxième nom).
+Si jamais le nom de fichier contient des espaces il faut veiller à le saisir entre guillemets.
+
+                                    *put:*
+Cette commande permet d'envoyer un fichier local sur le serveur.
+Si la commande est suivie d'un nom de fichier, le fichier local est transféré sur le serveur dans le répertoire distant en cours.
+Si la commande est suivie de deux noms de fichiers, le fichier local (le premier nom) est transféré sur le serveur dans le répertoire distant en cours, avec le nom de fichier précisé (le deuxième nom).
+Si jamais le nom de fichier contient des espaces il faut veiller à le saisir entre guillemet.
+
+
+
