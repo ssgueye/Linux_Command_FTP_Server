@@ -1,27 +1,28 @@
 ==========================================
-Ceci est un fichier README concernant le fonctionnement du programme FTP serveur client et Makefile
+This is a README file about the operation of the FTP client server program and Makefile.
 =========================================
----Fonctionnement du programme----
+---How the program work?----
 
-Le dossier actuel "projet" contient trois répertoires(commandfile,  fich_test et  FTP_client_serveur) et un fichier README.txt.
+The current "project" folder contains two directories( test_file and FTP_client_server), two hidden files(.ls, .pwd and a README.txt file.
 
-Dans le "fich_test", nous avons  encore un répertoire test et un fichier test(dossier_test et fichier_test.txt).
+In the "test_file" we still have a test directory and a test file(test_folder and test_file.txt).
+We have two files(pwd.txt and ls.txt) which will allow us to put the result of the commands "ls" and "pwd" at each execution. Both files will be updated at each execution.
 
-Dans le "commandfile", nous avons deux fichiers(pwd.txt et ls.txt) qui nous permettront de mettre le résutat des commandes "ls" et "pwd" à chaque exécution. Les deux fichiers seront mise à jours à chque exécution.
+In the file "FTP_client_server" we have three files(client.c, Makefile and server.c).
+The files "client.c" and "server.c" are the respective source codes for the FTP client and the FTP server.
+The Makefile file allows you to compile the "client.c" and "server.c" files in a simplified way, just use the "make" command to
+make the compilation. Then you will have the server and client executable files and the .o files that correspond to them. You can use the "make clean" command to remove the .o files (they are optional).
+To make the program work, you run the new files(server and client) in two terminals by first putting "./server num_port" (in one of the two terminals) and "./client num_port" (in the other).
 
-Dans le fichier "FTP_client_serveur", nous avons trois fichiers(client.c, Makefile et  serveur.c).
-Les fichiers "client.c" et "serveur.c" sont les codes sources respectifs pour le FTP client et le FTP serverur.
-Le fichier Makefile permet de compiler de façon simplifiée les fichiers "client.c" et "serveur.c".Il suffit juste d'utilisr la commande "make" pour
-faire la compilation. Aprés vous aurez les fichier exécutable du serveur et du client ainsi que les fichier .o qui leur correspondent. Vous pouvez utiliser la commande "make clean" pour supprimer les fichiers .o (ils sont optionnels).
-Pour faire fonctionner le programme, on exécute les nouveaux fichier(serveur et client) dans deux terminaux en mettant d'abord "./serveur num_port" (dans l'un des deux terminaux) et "./client num_port" (dans l'autre).
+==> IMPORTANT: You must put the same port numbers. 
+				Example: In terminal 1, put: ./server 1234 
+						 And in terminal 2, put: ./client 1234
 
-==> IMPORTANT: Vous devez mettre les mêmes numéros de port. 
-				Exemple: Dans le terminal 1, on met: ./serveur 1234 
-						 Et dans le terminal 2, on met : ./client 1234
-
-L'exécution du programme(./client num_port) vous demandera de vous identifier, vous pouvez dans ce cas mettre 
-l'un de ces ID: 1ABC, 2345, 5468, KE34, 9OLM, 9834, IK34, PO23, 5973, 3ERZ
-Le programme est un terminal virtuel, donc vous pouvez interagir avec le serveur en mettant des commandes comme "ls", "pwd", "cd", "get" et "put"
+The program(./client num_port) will ask you to identify yourself, in this case you can put 
+one of these IDs: 1ABC, 2345, 5468, KE34, 9OLM, 9834, IK34, PO23, 5973, 3ERZ
+The program is a virtual terminal, so you can interact with the server by putting commands like "ls", "pwd", "cd", "get", "put" and "quit".
 
 =======================================
-BON USAGE!!
+GOOD USE!!
+
+Thank for following me on Github
